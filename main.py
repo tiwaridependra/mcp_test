@@ -23,6 +23,10 @@ def random_number(min_val:int=1,max_val:int=100)->int:
     return  random.randint(min_val,max_val)
 
 
+@mcp.tool
+def rool_dice()->int:
+    """returns a number bertween 1 and 6"""
+    return random.randint(1,6)
 
 if __name__ == "__main__":
     mcp.run(transport="streamable-http",host="0.0.0.0",port=8000)
